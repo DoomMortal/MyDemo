@@ -25,7 +25,7 @@ public class SearchAdapter extends ArrayAdapter<SearchArticle> implements Filter
     private ArrayList<SearchArticle> web;
 
     public SearchAdapter(Activity context, int viewResourceId, ArrayList<SearchArticle> web) {
-        super(context, viewResourceId, android.R.id.text1, web);
+        super(context, viewResourceId, viewResourceId, web);
         this.mContext = context;
         this.viewResourceId = viewResourceId;
         this.web = web;
